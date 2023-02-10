@@ -101,16 +101,24 @@ public class Aluno {
 
 	
 	public double getMediaNota() {
-		return 0;
+		
+		double somaNotas= 0.0;
+		
+		for (Disciplina disciplina : disciplinas) {
+			somaNotas+= disciplina.getNota();
+			
+		}
+		
+		return somaNotas / disciplinas.size();
 
 	}
 
-	public boolean getAlunoAprovado() {
+	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
 		if (media >= 60) {
-			return true;
+			return ("aluno aprovado...");
 		} else {
-			return false;
+			return ("aluno reprovado...");
 		}
 	}
 

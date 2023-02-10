@@ -25,26 +25,7 @@ public class Teste {
 		aluno.setIdade(Integer.valueOf(idade));
 		aluno.setDataNascimento(dataNascimento);
 		/*----------------------------------------------------------------*/
-		Disciplina disciplina1 = new Disciplina();
-		disciplina1.setDisciplina("Banco de Dados");
-		disciplina1.setNota(90);
-		/*------------------------------------------------------------------------*/
-		Disciplina disciplina2 = new Disciplina();
-		disciplina2.setDisciplina("matematica");
-		disciplina2.setNota(80);
-		/*------------------------------------------------------------------------*/
-		Disciplina disciplina3 = new Disciplina();
-		disciplina3.setDisciplina("algoritmo");
-		disciplina3.setNota(85);
-		/*------------------------------------------------------------------------*/
-		Disciplina disciplina4 = new Disciplina();
-		disciplina4.setDisciplina("eng. software");
-		disciplina4.setNota(70);
-		/*------------------------------------------------------------------------*/
-		aluno.getDisciplinas().add(disciplina1);
-		aluno.getDisciplinas().add(disciplina2);
-		aluno.getDisciplinas().add(disciplina3);
-		aluno.getDisciplinas().add(disciplina4);
+
 		/*------------------------------------------------------------------------*/
 		System.out.println(aluno.toString());
 		System.out.println(aluno.getAlunoAprovado());

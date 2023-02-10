@@ -18,10 +18,7 @@ public class Teste {
 		String nome = JOptionPane.showInputDialog("Qual nome do aluno???");
 		String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
 		String dataNascimento = JOptionPane.showInputDialog("Qual data de nascimento do aluno???");
-		String nota1 = JOptionPane.showInputDialog("Qual a 1ª nota??? ");
-		String nota2 = JOptionPane.showInputDialog("Qual a 2ª nota???");
-		String nota3 = JOptionPane.showInputDialog("Qual a 3ª nota???");
-		String nota4 = JOptionPane.showInputDialog("Qual a 4ª nota???");
+		
 
 		aluno4.setNome(nome);
 		aluno4.setIdade(Integer.valueOf(idade));

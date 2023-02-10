@@ -99,7 +99,7 @@ public class Aluno {
 		this.dataMatricula = dataMatricula;
 	}
 
-	/*----------------------------------------------------------*/
+	
 	public double getMediaNota() {
 		return 0;
 

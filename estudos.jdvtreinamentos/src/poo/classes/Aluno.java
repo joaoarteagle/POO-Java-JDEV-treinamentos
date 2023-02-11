@@ -109,8 +109,10 @@ public class Aluno {
 			
 		}
 		
+		
+		System.out.println("Média do aluno foi: "+ somaNotas / disciplinas.size());
 		return somaNotas / disciplinas.size();
-
+		
 	}
 
 	public String getAlunoAprovado() {

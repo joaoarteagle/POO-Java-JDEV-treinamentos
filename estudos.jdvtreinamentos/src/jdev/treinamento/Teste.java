@@ -1,6 +1,8 @@
 package jdev.treinamento;
 
+import java.util.ArrayList;
 import java.util.Dictionary;
+import java.util.List;
 
 import javax.swing.JOptionPane;
 
@@ -16,15 +18,23 @@ public class Teste {
 
 		/* Agora temos um objeto real na memoria */
 
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		
+		String quantos = JOptionPane.showInputDialog("quantos alunos estão na classe");
+		int qnt = Integer.valueOf(quantos).intValue();
+		for(qnt=1 ; qnt<2 ; qnt++) {
+		
+		
+		
 		Aluno aluno = new Aluno();
-		String nome = JOptionPane.showInputDialog("Qual nome do aluno???");
-		String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
+		String nome = JOptionPane.showInputDialog("Qual nome do aluno "+qnt+" ???");
+		/*String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
 		String dataNascimento = JOptionPane.showInputDialog("Qual data de nascimento do aluno???");
         String rg = JOptionPane.showInputDialog("Qual o RG do aluno?");
 		String cpf = JOptionPane.showInputDialog("Qual o CPF do aluno?");
 		String mae = JOptionPane.showInputDialog("Qual o nome da mãe?");
 		String pai = JOptionPane.showInputDialog("Qual o nome do pai?");
-		String matricula = JOptionPane.showInputDialog("Dia da matricula:");
+		String matricula = JOptionPane.showInputDialog("Dia da matricula:"); 
 		
 		aluno.setNome(nome);
 		aluno.setIdade(Integer.valueOf(idade));
@@ -33,7 +43,7 @@ public class Teste {
 		aluno.setNumeroCpf(cpf);
 		aluno.setNomeMae(mae);
 		aluno.setNomePai(pai);
-		aluno.setDataMatricula(matricula);
+		aluno.setDataMatricula(matricula); */
 		/*----------------------------------------------------------------*/
             for (int posi = 1; posi<=4; posi++) {
             	
@@ -67,10 +77,14 @@ public class Teste {
             	 
              }
             
-            
+		}        
 		/*------------------------------------------------------------------------*/
-		System.out.println(aluno.toString());
-		System.out.println(aluno.getAlunoAprovado());
+		for (Aluno aluno : alunos) {
+			System.out.println(aluno.toString());
+			System.out.println(aluno.getAlunoAprovado());
+		}
+		
+		
 
 	}
 

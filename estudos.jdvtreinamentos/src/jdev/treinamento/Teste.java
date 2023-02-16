@@ -47,6 +47,27 @@ public class Teste {
             	
             	aluno.getDisciplinas().add(disciplina);
             }
+            
+            
+            
+           int escolha =  JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina?");
+             if(escolha==0) {
+            	 
+            	 int continuarRemover = 0;/*opção sim é zero*/
+            	 
+            	 int posicao = 1;
+            	 
+            	 
+            	 while(continuarRemover==0) { 	 String disciplinaRemover = JOptionPane.showInputDialog("Qual a disciplina 1 , 2 , 3 , 4 ?");
+            	 aluno.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);
+            	 posicao ++;
+            	 
+            	 continuarRemover = JOptionPane.showConfirmDialog(null, "Continuar Remover?");
+            	 }
+            	 
+             }
+            
+            
 		/*------------------------------------------------------------------------*/
 		System.out.println(aluno.toString());
 		System.out.println(aluno.getAlunoAprovado());

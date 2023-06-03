@@ -15,5 +15,5 @@ public class class_thread {
 	  
 	  System.out.println("CHEGOU AO FINAL DO TESTE NO FOR");
 }
-/**/
+/*teste*/
 }

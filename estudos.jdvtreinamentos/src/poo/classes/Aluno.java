@@ -8,7 +8,7 @@ import java.util.ListIterator;
 
 public class Aluno {
 
-	/* esses são os atributos do Aluno */
+	/* esses sï¿½o os atributos do Aluno */
 	private String nome;
 	private int idade;
 	private String dataNascimento;
@@ -30,8 +30,8 @@ public class Aluno {
 
 	/* veremos os metodos SETTERS e GETTERS do objeto */
 
-	/* SET é para adicionar ou receber dados para os atributos */
-	/* GET é para resgatar ou obter o valor do atributo */
+	/* SET ï¿½ para adicionar ou receber dados para os atributos */
+	/* GET ï¿½ para resgatar ou obter o valor do atributo */
 
 	/* recebe dados */
 	public void setNome(String nome) {
@@ -110,7 +110,7 @@ public class Aluno {
 		}
 		
 		
-		System.out.println("Média do aluno foi: "+ somaNotas / disciplinas.size());
+		System.out.println("Mï¿½dia do aluno foi: "+ somaNotas / disciplinas.size());
 		return somaNotas / disciplinas.size();
 		
 	}

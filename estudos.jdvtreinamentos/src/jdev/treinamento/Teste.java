@@ -13,8 +13,8 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		/* new Aluno() é uma instancia (criação de objeto) */
-		/* aluno2 é umareferencia para o objeto Aluno */
+		/* new Aluno() ï¿½ uma instancia (criaï¿½ï¿½o de objeto) */
+		/* aluno2 ï¿½ umareferencia para o objeto Aluno */
 
 		/* Agora temos um objeto real na memoria */
 
@@ -22,16 +22,16 @@ public class Teste {
          
 		for (int qnt = 1; qnt <= 2; qnt++) {
 
-			Aluno aluno = new Aluno();
+		Aluno aluno = new Aluno();
 			String nome = JOptionPane.showInputDialog("Qual nome do aluno " + qnt + " ???");
-			aluno.setNome(nome);
+		aluno.setNome(nome);
 			/*
 			 * String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
 			 * String dataNascimento =
 			 * JOptionPane.showInputDialog("Qual data de nascimento do aluno???"); String rg
 			 * = JOptionPane.showInputDialog("Qual o RG do aluno?"); String cpf =
 			 * JOptionPane.showInputDialog("Qual o CPF do aluno?"); String mae =
-			 * JOptionPane.showInputDialog("Qual o nome da mãe?"); String pai =
+			 * JOptionPane.showInputDialog("Qual o nome da mï¿½e?"); String pai =
 			 * JOptionPane.showInputDialog("Qual o nome do pai?"); String matricula =
 			 * JOptionPane.showInputDialog("Dia da matricula:");
 			 * 
@@ -40,7 +40,7 @@ public class Teste {
 			 * aluno.setNumeroCpf(cpf); aluno.setNomeMae(mae); aluno.setNomePai(pai);
 			 * aluno.setDataMatricula(matricula);
 			 */
-			/*----------------------------------------------------------------*/
+		/*----------------------------------------------------------------*/
 			for (int posi = 1; posi <= 4; posi++) {
 
 				String nomeDisciplina = JOptionPane.showInputDialog("nome da Disciplina " + posi + " ?");
@@ -56,7 +56,7 @@ public class Teste {
 			int escolha = JOptionPane.showConfirmDialog(null, "Deseja remover alguma disciplina?");
 			if (escolha == 0) {
 
-				int continuarRemover = 0;/* opção sim é zero */
+				int continuarRemover = 0;/* opï¿½ï¿½o sim ï¿½ zero */
 
 				int posicao = 1;
 
@@ -79,8 +79,8 @@ public class Teste {
 			alunos.remove(aluno);
 			break;
 			}else {
-				System.out.println(aluno.toString());
-			System.out.println(aluno.getAlunoAprovado());
+		System.out.println(aluno.toString());
+		System.out.println(aluno.getAlunoAprovado());
 			System.out.println("====================================================================");
 			}
 			
@@ -90,13 +90,15 @@ public class Teste {
 			System.out.println("Alunos que sobraram na lista:");
 			System.out.println(aluno.getNome());
 			System.out.println("Suas dicliplinas: ");
-			
+
 		for	(Disciplina disciplina : aluno.getDisciplinas()) {
 			System.out.println(disciplina.getDisciplina());
-			
+       
 		}
 			
 		}
+
+       
 
 	}
 

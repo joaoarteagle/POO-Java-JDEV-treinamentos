@@ -1,12 +1,15 @@
 package modulo_datas;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class ClassDatasEmJava {
 
 	
 	public static void main(String[] args) {
+		
+		Calendar calendar = Calendar.getInstance();
 		
 		Date date = new Date();
 		
@@ -28,9 +31,16 @@ public class ClassDatasEmJava {
 		
 		/*====================SIMPLE DATE FORMAT============================*/
 		
-		SimpleDateFormat simpleDateFormat =  new SimpleDateFormat("dd/MM/yyy");
+		SimpleDateFormat simpleDateFormat =  new SimpleDateFormat("dd/MM/yyyy HH:mm.ss");
 		
 		System.out.println("Data atual: " + simpleDateFormat.format(date));
+		
+		
+		simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd HH:MM.ss");
+		
+		System.out.println("Novo Formato: " + simpleDateFormat.format(date));
+		
+		System.out.println("calendar novo formato" + simpleDateFormat.format(calendar.getTime()));
 		
 	}
 	

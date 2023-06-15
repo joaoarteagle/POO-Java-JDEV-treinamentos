@@ -1,19 +1,22 @@
 package modulo_datas;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 
 public class ClassDatasEmJava {
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 		Calendar calendar = Calendar.getInstance();
 		
 		Date date = new Date();
 		
-		System.out.println("Datas em Mi lisegundos " + date.getTime());
+	/*	System.out.println("Datas em Mi lisegundos " + date.getTime());
 		
 		System.out.println("Dia do Mês " + date.getDate());
 		
@@ -31,16 +34,14 @@ public class ClassDatasEmJava {
 		
 		/*====================SIMPLE DATE FORMAT============================*/
 		
-		SimpleDateFormat simpleDateFormat =  new SimpleDateFormat("dd/MM/yyyy HH:mm.ss");
+		Date dataPassada = new SimpleDateFormat("dd/MM/yyyy").parse("01/02/2023");
 		
-		System.out.println("Data atual: " + simpleDateFormat.format(date));
+		long days = ChronoUnit.DAYS.between(LocalDate.parse("2023-04-01"), LocalDate.now());
+		
+		System.out.println("Possui " + days + " dias entre a faicha de data \n\n");
 		
 		
-		simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd HH:MM.ss");
-		
-		System.out.println("Novo Formato: " + simpleDateFormat.format(date));
-		
-		System.out.println("calendar novo formato" + simpleDateFormat.format(calendar.getTime()));
+	
 		
 	}
 	

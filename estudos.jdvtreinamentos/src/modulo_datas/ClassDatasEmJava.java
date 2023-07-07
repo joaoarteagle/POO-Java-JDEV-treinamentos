@@ -9,40 +9,25 @@ import java.util.Date;
 
 public class ClassDatasEmJava {
 
-	
 	public static void main(String[] args) throws ParseException {
+
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+
+		Date dataVencimento = simpleDateFormat.parse("11/04/2021");
+
+		Date dataAtual = simpleDateFormat.parse("07/04/2021");
+
+		/* se a dataVencimento é maior que a dataAtual */
 		
-		Calendar calendar = Calendar.getInstance();
+		//After -> se data 1 é maior que data 2
+		//Before -> se data 1 é menor que data 2
 		
-		Date date = new Date();
-		
-	/*	System.out.println("Datas em Mi lisegundos " + date.getTime());
-		
-		System.out.println("Dia do M�s " + date.getDate());
-		
-		System.out.println("Dia da Semana " + date.getDay());
-		
-		System.out.println("Da as Horas " + date.getHours());
-		
-		System.out.println("Da os Minutos " + date.getMinutes());
-		
-		System.out.println("Nome do M�s " + date.getMonth());
-		
-		System.out.println("Data em segundos" + date.getSeconds());
-		
-		System.out.println("ano " + (date.getYear() + 1900));
-		
-		/*====================SIMPLE DATE FORMAT============================*/
-		
-		Date dataPassada = new SimpleDateFormat("dd/MM/yyyy").parse("01/02/2023");
-		
-		long days = ChronoUnit.DAYS.between(LocalDate.parse("2023-04-01"), LocalDate.now());
-		
-		System.out.println("Possui " + days + " dias entre a faicha de data \n\n");
-		
-		
-	
-		
+		if (dataAtual.before(dataVencimento)) {
+			System.out.println("Boleto não vencido");
+		} else {
+			System.out.println("Boleto vencido... Pague urgente");
+		}
+
 	}
-	
+
 }

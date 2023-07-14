@@ -22,24 +22,28 @@ public class Teste {
          
 		for (int qnt = 1; qnt <= 2; qnt++) {
 
-		Aluno aluno = new Aluno();
+		Aluno aluno = new Aluno();//é uma instancia (criação de objeto)
+		
 			String nome = JOptionPane.showInputDialog("Qual nome do aluno " + qnt + " ???");
-		aluno.setNome(nome);
+			aluno.setNome(nome);
+			
 			/*
-			 * String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
-			 * String dataNascimento =
-			 * JOptionPane.showInputDialog("Qual data de nascimento do aluno???"); String rg
-			 * = JOptionPane.showInputDialog("Qual o RG do aluno?"); String cpf =
-			 * JOptionPane.showInputDialog("Qual o CPF do aluno?"); String mae =
-			 * JOptionPane.showInputDialog("Qual o nome da m�e?"); String pai =
-			 * JOptionPane.showInputDialog("Qual o nome do pai?"); String matricula =
-			 * JOptionPane.showInputDialog("Dia da matricula:");
-			 * 
-			 *  aluno.setIdade(Integer.valueOf(idade));
-			 * aluno.setDataNascimento(dataNascimento); aluno.setRegistroGeral(rg);
-			 * aluno.setNumeroCpf(cpf); aluno.setNomeMae(mae); aluno.setNomePai(pai);
-			 * aluno.setDataMatricula(matricula);
-			 */
+			  String idade = JOptionPane.showInputDialog("Qual a idade do aluno???");
+			  String dataNascimento = JOptionPane.showInputDialog("Qual data de nascimento do aluno???");
+			  String rg = JOptionPane.showInputDialog("Qual o RG do aluno?"); 
+			  String cpf = JOptionPane.showInputDialog("Qual o CPF do aluno?"); 
+			  String mae = JOptionPane.showInputDialog("Qual o nome da m�e?"); 
+			  String pai = JOptionPane.showInputDialog("Qual o nome do pai?");
+			  String matricula = JOptionPane.showInputDialog("Dia da matricula:");
+			  
+			  aluno.setIdade(Integer.valueOf(idade));
+			  aluno.setDataNascimento(dataNascimento); 
+			  aluno.setRegistroGeral(rg);
+			  aluno.setNumeroCpf(cpf);
+			  aluno.setNomeMae(mae); 
+			  aluno.setNomePai(pai);
+			  aluno.setDataMatricula(matricula);
+			*/ 
 		/*----------------------------------------------------------------*/
 			for (int posi = 1; posi <= 4; posi++) {
 

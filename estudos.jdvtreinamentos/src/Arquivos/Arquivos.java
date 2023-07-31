@@ -11,7 +11,7 @@ public class Arquivos {
 	public static void main(String[] args) throws IOException {
 		
 		Pessoa_arquivo pessoa1  = new Pessoa_arquivo();
-		pessoa1.setNome("Alex");
+		pessoa1.setNome("alan");
 		pessoa1.setEmail("alex@gmail.com");
 		pessoa1.setIdade(25);
 		
@@ -34,7 +34,7 @@ public class Arquivos {
 		
 		
 		
-		File arquivo = new File("C:\\Users\\Usuario\\git\\repository\\JDEV\\estudos.jdvtreinamentos\\src\\arquivos\\arquivo.txt");
+		File arquivo = new File("C:\\Users\\João Andrade\\git\\POO-Java-JDEV-treinamentos\\estudos.jdvtreinamentos\\src\\Arquivos\\arquivo.txt");
 		
 		if(!arquivo.exists()) {
 			arquivo.createNewFile();

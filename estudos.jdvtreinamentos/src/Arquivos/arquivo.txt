@@ -1,6 +1,10 @@
-Alex;alex@gmail.com;25
+alan;alex@gmail.com;28
+
+Jose;jose@gmail.com;17
+
 
 Alex;alex@gmail.com;25
 
-Alex;alex@gmail.com;25
+Henrique;henrique@gmail.com;45
 
+Pedro;pedro@gmail.com;23

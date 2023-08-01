@@ -1,11 +1,15 @@
 package Arquivos;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 
 public class ApachiPoi {
 
@@ -43,8 +47,36 @@ public class ApachiPoi {
 	//===================================================================	
 		
 			
-		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();// Usado para escrever a planilha
+		HSSFWorkbook Teste = new HSSFWorkbook();// USED TO WRITE THE EXCEL SPREADSHEET
+
 		
+		HSSFSheet rowPessoas = Teste.createSheet("Planilha de Pessoas Jdev Treinamentos");//STARTING THE SPREADSHEET
+		
+		int nRow = 0;//AUX
+		
+		for (Pessoa_arquivo P : pessoas) {
+			Row row = rowPessoas.createRow(nRow ++);
+			
+			int cell = 0;
+//======================START CELLS===================//
+			//NAME-CELL01
+			Cell celNome = row.createCell(cell++);
+			celNome.setCellValue(P.getNome());
+			//EMAIL-CELL02
+			Cell celEmail = row.createCell(cell++);
+			celEmail.setCellValue(P.getEmail());
+			//AGE-CELL03
+			Cell celIdade = row.createCell(cell++);
+			celIdade.setCellValue(P.getIdade());
+//=========================END========================//
+		}//FINISHING TO ASSEMBLE THE SPREADSHEET
+		
+		FileOutputStream Exit = new FileOutputStream(file);
+		Teste.write(Exit);//Write the Spreadsheet to file
+		Exit.flush();
+		Exit.close();
+		
+		System.out.println("Planilha foi criada");
 		
 	}
 	

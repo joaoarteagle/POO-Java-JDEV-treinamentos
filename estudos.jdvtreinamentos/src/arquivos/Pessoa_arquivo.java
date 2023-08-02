@@ -1,4 +1,4 @@
-package Arquivos;
+package arquivos;
 
 public class Pessoa_arquivo {
 	

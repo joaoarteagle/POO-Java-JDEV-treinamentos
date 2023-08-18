@@ -1,12 +1,18 @@
 package arquivos;
 
+
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
+
 
 public class AulaJson {
 
@@ -41,7 +47,19 @@ public class AulaJson {
 		fileWriter.flush();
 		fileWriter.close();
 		
+		//==============================READ .JSON=================================================
 		
+		FileReader fileReader = new FileReader("C:\\Users\\João Andrade\\git\\POO-Java-JDEV-treinamentos\\estudos.jdvtreinamentos\\src\\arquivos\\filejson.json");
+		
+		JsonArray jsonArray = (JsonArray) JsonParser.parseReader(fileReader);
+	     
+		List<UsuarioJson> leUsuarios = new ArrayList<UsuarioJson>();
+		
+		for (JsonElement jsonElement : jsonArray) {
+			
+			
+			
+		}
 	}
 	
 	
